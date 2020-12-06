@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ES2019"
+    ],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
+}

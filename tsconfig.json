@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "ES2015",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "sourceMap": false,
+        "removeComments": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "outDir": "output",
+        "rootDir": "./",
+        "noUnusedLocals": true,
+        "declaration": true,
+        "allowJs": true,
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules",
+        "output"
+    ],
+    "include": [
+        "./*",
+        "./**/*"
+    ]
+}
