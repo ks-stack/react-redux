@@ -4,9 +4,8 @@
 import { createStore as reduxCreateStore, combineReducers, StoreCreator } from 'redux';
 
 export * from 'react-redux';
-type PickObject<Obj extends any, Key extends keyof Obj, Prop extends any> = Obj[Key][Prop];
 type SetState<T> = (payload: Partial<T>) => void;
-export type Store = {
+export type Reducers = {
     [key: string]: {
         state: {
             [key: string]: any;
@@ -16,11 +15,11 @@ export type Store = {
         };
     };
 };
-export type StatesType<T> = {
-    [key in keyof T]: PickObject<T, key, 'state'>;
+export type StatesType<T extends Reducers> = {
+    [key in keyof T]: T[key]['state'];
 };
-export type ActionsType<T> = {
-    [key in keyof T]: PickObject<T, key, 'actions'> & {
+export type ActionsType<T extends Reducers> = {
+    [key in keyof T]: T[key]['actions'] & {
         setState: SetState<StatesType<T>[key]>;
     };
 };
@@ -38,7 +37,7 @@ type CreateStoreReturnType = {
     actions: any;
 };
 
-function createStore(store: Store, ...arg: any): CreateStoreReturnType {
+function createStore(store: Reducers, ...arg: any): CreateStoreReturnType {
     const actions: any = {};
     const reducers = {};
     let reduxStore: any;
