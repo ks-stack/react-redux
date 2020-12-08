@@ -1,6 +1,6 @@
 {
     "name": "@ks-stack/react-redux",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "scripts": {
         "start": "node cli start",
         "build": "rm -rf ./output && tsc"

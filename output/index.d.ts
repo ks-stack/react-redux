@@ -1,8 +1,7 @@
 import { StoreCreator } from 'redux';
 export * from 'react-redux';
-declare type PickObject<Obj extends any, Key extends keyof Obj, Prop extends any> = Obj[Key][Prop];
 declare type SetState<T> = (payload: Partial<T>) => void;
-export declare type Store = {
+export declare type Reducers = {
     [key: string]: {
         state: {
             [key: string]: any;
@@ -12,11 +11,11 @@ export declare type Store = {
         };
     };
 };
-export declare type StatesType<T> = {
-    [key in keyof T]: PickObject<T, key, 'state'>;
+export declare type StatesType<T extends Reducers> = {
+    [key in keyof T]: T[key]['state'];
 };
-export declare type ActionsType<T> = {
-    [key in keyof T]: PickObject<T, key, 'actions'> & {
+export declare type ActionsType<T extends Reducers> = {
+    [key in keyof T]: T[key]['actions'] & {
         setState: SetState<StatesType<T>[key]>;
     };
 };
@@ -31,5 +30,5 @@ declare type CreateStoreReturnType = {
     store: ReturnType<StoreCreator>;
     actions: any;
 };
-declare function createStore(store: Store, ...arg: any): CreateStoreReturnType;
+declare function createStore(store: Reducers, ...arg: any): CreateStoreReturnType;
 export { createStore };
