@@ -1377,6 +1377,37 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@ks-stack/eslint-config-typescript@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.npm.taobao.org/@ks-stack/eslint-config-typescript/download/@ks-stack/eslint-config-typescript-0.0.1.tgz#c0d357f2e913dc66728dc592504dbc841a968e7f"
+  integrity sha1-wNNX8ukT3GZyjcWSUE28hBqWjn8=
+  dependencies:
+    "@react-native-community/eslint-config" "^0.0.3"
+    "@typescript-eslint/eslint-plugin" "^3.5.0"
+    "@typescript-eslint/parser" "^2.3.1"
+    babel-eslint "^10.1.0"
+    eslint "^7.3.1"
+    eslint-config-airbnb "^18.2.0"
+    eslint-config-airbnb-typescript "^8.0.2"
+    eslint-config-prettier "^6.11.0"
+    eslint-config-standard "^14.1.1"
+    eslint-friendly-formatter "^4.0.1"
+    eslint-loader "^4.0.2"
+    eslint-plugin-html "^6.0.2"
+    eslint-plugin-import "^2.22.0"
+    eslint-plugin-jsx-a11y "^6.3.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-prettier "^3.1.4"
+    eslint-plugin-promise "^4.2.1"
+    eslint-plugin-react "^7.20.3"
+    eslint-plugin-react-hooks "^4.0.4"
+    eslint-plugin-standard "^4.0.1"
+
+"@ks-stack/react-redux@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/@ks-stack/react-redux/download/@ks-stack/react-redux-0.0.2.tgz?cache=0&sync_timestamp=1607436631709&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ks-stack%2Freact-redux%2Fdownload%2F%40ks-stack%2Freact-redux-0.0.2.tgz#afc1c4bc8c2075e1e5f972450067b97dae82dbf3"
+  integrity sha1-r8HEvIwgdeHl+XJFAGe5fa6C2/M=
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "http://172.16.1.179:4873/@mrmlnc%2freaddir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4369,32 +4400,6 @@ eslint-config-airbnb@^18.1.0, eslint-config-airbnb@^18.2.0:
     eslint-config-airbnb-base "^14.2.0"
     object.assign "^4.1.0"
     object.entries "^1.1.2"
-
-eslint-config-ks-typescript@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/eslint-config-ks-typescript/-/eslint-config-ks-typescript-0.0.6.tgz#bed43de65b646d6ae697c9731a213fbb929c7126"
-  integrity sha512-Q7ueh//ZnqW5L3D3GSvRnrDw9fS+BNvoa/9LlpXa+Rf26Us79bqmg9rdroXwe/+sTvZJ4Ks1p1ZMP1qebgv74w==
-  dependencies:
-    "@react-native-community/eslint-config" "^0.0.3"
-    "@typescript-eslint/eslint-plugin" "^3.5.0"
-    "@typescript-eslint/parser" "^2.3.1"
-    babel-eslint "^10.1.0"
-    eslint "^7.3.1"
-    eslint-config-airbnb "^18.2.0"
-    eslint-config-airbnb-typescript "^8.0.2"
-    eslint-config-prettier "^6.11.0"
-    eslint-config-standard "^14.1.1"
-    eslint-friendly-formatter "^4.0.1"
-    eslint-loader "^4.0.2"
-    eslint-plugin-html "^6.0.2"
-    eslint-plugin-import "^2.22.0"
-    eslint-plugin-jsx-a11y "^6.3.1"
-    eslint-plugin-node "^11.1.0"
-    eslint-plugin-prettier "^3.1.4"
-    eslint-plugin-promise "^4.2.1"
-    eslint-plugin-react "^7.20.3"
-    eslint-plugin-react-hooks "^4.0.4"
-    eslint-plugin-standard "^4.0.1"
 
 eslint-config-prettier@^6.11.0:
   version "6.13.0"
@@ -9323,11 +9328,6 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-i
   version "16.13.1"
   resolved "http://172.16.1.179:4873/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
-
-react-redux-easy@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/react-redux-easy/-/react-redux-easy-0.0.2.tgz#1c2dca690d9ea87f3607d2f179a667dd11987910"
-  integrity sha512-hwFE72A3cTP2eOBjiBFKfP5/Eds62TooDY0H959TTft6GGfdqI2ymm6+3P6GM7CTLrOrF9QfIx0r03Vk5p5JAg==
 
 react-redux@^7.2.1:
   version "7.2.1"

@@ -3,7 +3,7 @@
 import React from 'react';
 import {
     createStore as CommonCreateStore,
-    Store,
+    Reducers as KSReducers,
     GetState,
     createSelectorHook,
     UseSelector,
@@ -11,7 +11,7 @@ import {
     ActionsType,
     connect as reduxConnect,
     Connect,
-} from 'react-redux-easy';
+} from '@ks-stack/react-redux';
 import type { Reducers } from '../models';
 
 type Actions = ActionsType<Reducers>;
@@ -21,7 +21,7 @@ let actions: Actions;
 let store: any;
 let context: React.Context<any>;
 
-function createStore<T extends Store>(reducers: T) {
+function createStore<T extends KSReducers>(reducers: T) {
     const res = CommonCreateStore(reducers);
     actions = res.actions;
     store = res.store;
