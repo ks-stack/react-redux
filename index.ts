@@ -10,8 +10,8 @@ export type Reducers = {
         state: {
             [key: string]: any;
         };
-        actions: {
-            [key: string]: (...payload: any) => Object;
+        actions?: {
+            [key: string]: (...payload: any) => Object | void;
         };
     };
 };
@@ -45,8 +45,8 @@ function createStore(store: Reducers, ...arg: any): CreateStoreReturnType {
         (actions as any)[i] = {};
         for (const k in store[i].actions) {
             (actions as any)[i][k] = async (...payload: any) => {
-                const result = await store[i].actions[k](...payload);
-                if (result?.constructor === Object) {
+                const result = await store[i].actions?.[k](...payload);
+                if ((result as any)?.constructor === Object) {
                     reduxStore.dispatch({
                         type: `${i}.${k}`,
                         payload: result,

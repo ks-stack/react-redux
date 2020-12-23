@@ -6,8 +6,8 @@ export declare type Reducers = {
         state: {
             [key: string]: any;
         };
-        actions: {
-            [key: string]: (...payload: any) => Object;
+        actions?: {
+            [key: string]: (...payload: any) => Object | void;
         };
     };
 };
